@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registration Form</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <div class="registration">
+            <img src="./background.png" alt="" class="registration__img" />
+            <h2 class="heading">Sign Up</h2>
+            <form class="form" autocomplete="off">
+                <img class="form__image" src="/background.png" />
+                <div class="form__body">
+                    <div class="user-account">
+                        <h4 class="form__title">User Account</h4>
+                        <div class="form__item">
+                            <input
+                                required
+                                type="text"
+                                class="form__item__input"
+                                id="email"
+                            />
+                            <label for="email" class="form__item__label"
+                                >Enter Email Address</label
+                            >
+                            <small></small>
+                        </div>
+                        <div class="form__item">
+                            <input
+                                required
+                                type="password"
+                                class="form__item__input"
+                                id="password"
+                            />
+                            <label for="password" class="form__item__label"
+                                >Enter Password</label
+                            >
+                            <small></small>
+                        </div>
+                        <div class="form__item">
+                            <input
+                                required
+                                type="password"
+                                class="form__item__input"
+                                id="confirm"
+                            />
+                            <label for="confirm" class="form__item__label"
+                                >Confirm Password</label
+                            >
+                            <small></small>
+                        </div>
+                    </div>
+
+                    <div class="user-profile hide">
+                        <h4 class="form__title">User Profile</h4>
+                        <div class="form__item">
+                            <input
+                                required
+                                type="text"
+                                class="form__item__input"
+                                id="name"
+                            />
+                            <label for="name" class="form__item__label"
+                                >Enter Full Name</label
+                            >
+                            <small></small>
+                        </div>
+                        <div class="form__item">
+                            <input
+                                required
+                                type="number"
+                                class="form__item__input"
+                                id="phone"
+                            />
+                            <label for="phone" class="form__item__label"
+                                >Enter Phone Number</label
+                            >
+                            <small></small>
+                        </div>
+                        <div class="form__item">
+                            <select
+                                id="gender"
+                                required
+                                class="form__item__select"
+                            >
+                                <option value=""></option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                            <label for="gender" class="form__item__label"
+                                >Select Gender</label
+                            >
+                            <small></small>
+                        </div>
+                    </div>
+
+                    <div class="thank-you hide">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="form__footer">
+                    <div class="controls">
+                        <button class="button prev" type="button">
+                            <span class="fas fa-arrow-left"></span> Prev
+                        </button>
+                        <button class="button next" type="button">
+                            Next <span class="fas fa-arrow-right"></span>
+                        </button>
+                        <button class="button submit hide" type="submit">
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
