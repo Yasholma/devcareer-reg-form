@@ -342,3 +342,9 @@ div.slideRight {
             transform: translateX(0);
   }
 }
+
+@media (max-width: 450px) {
+  .form {
+    width: 320px;
+  }
+}
