@@ -89,6 +89,7 @@ nextBtn.onclick = function () {
     if (emailField.valid && passwordField.valid && confirmField.valid) {
         this.classList.add("hide");
         submitBtn.classList.remove("hide");
+        prevBtn.classList.remove("disabled");
 
         userAccount.style.opacity = "0";
         userAccount.classList.add("hide");
@@ -113,20 +114,22 @@ prevBtn.onclick = function () {
 
 submitBtn.onclick = function (e) {
     e.preventDefault();
-    userProfile.classList.add("hide");
-    thankYou.classList.remove("hide");
+    if (nameField.valid && phoneField.valid && genderField.valid) {
+        userProfile.classList.add("hide");
+        thankYou.classList.remove("hide");
 
-    document.querySelector(
-        ".thank-you h3",
-    ).innerHTML = `Thank You ${nameField.value} for registering with us.`;
+        document.querySelector(
+            ".thank-you h3",
+        ).innerHTML = `Thank You ${nameField.value} for registering with us.`;
 
-    document.querySelector(
-        ".thank-you p",
-    ).innerHTML = `We have sent a confirmation mail to ${emailField.value}`;
+        document.querySelector(
+            ".thank-you p",
+        ).innerHTML = `We have sent a confirmation mail to ${emailField.value}`;
 
-    prevBtn.classList.add("hide");
-    submitBtn.classList.add("hide");
-    nextBtn.classList.add("hide");
+        prevBtn.classList.add("hide");
+        submitBtn.classList.add("hide");
+        nextBtn.classList.add("hide");
+    }
 };
 
 const getSiblings = element => {

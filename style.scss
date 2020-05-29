@@ -172,6 +172,11 @@ body {
         font-size: 0.8rem;
         outline: 0;
 
+        &.disabled {
+            cursor: not-allowed;
+            background: #ccc;
+        }
+
         &.hide {
             display: none;
         }

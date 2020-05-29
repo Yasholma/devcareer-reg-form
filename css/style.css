@@ -186,6 +186,11 @@ body {
   outline: 0;
 }
 
+.form .button.disabled {
+  cursor: not-allowed;
+  background: #ccc;
+}
+
 .form .button.hide {
   display: none;
 }
