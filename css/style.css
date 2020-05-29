@@ -9,7 +9,8 @@
 body {
   font-size: 1em;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   display: -ms-grid;
   display: grid;
   place-content: center;
@@ -20,10 +21,13 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   z-index: -1;
   max-width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   -webkit-filter: blur(3px);
           filter: blur(3px);
 }
@@ -346,5 +350,23 @@ div.slideRight {
 @media (max-width: 450px) {
   .form {
     width: 320px;
+  }
+}
+
+@media (max-width: 320px) {
+  .heading {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0.8rem;
+  }
+  .registration__img {
+    height: 130vh;
+  }
+  .form {
+    width: 280px;
+  }
+  .form__image {
+    width: 100px;
+    height: 100px;
   }
 }
