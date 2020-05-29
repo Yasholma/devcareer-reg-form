@@ -27,6 +27,7 @@ body {
     max-width: 100%;
     min-height: 100vh;
     height: 100%;
+    display: block;
     filter: blur(3px);
 }
 
@@ -178,7 +179,8 @@ body {
 
         &.disabled {
             cursor: not-allowed;
-            background: #ccc;
+            background: #504a4a;
+            border-color: transparent;
         }
 
         &.hide {
@@ -206,7 +208,7 @@ body {
     text-align: center;
     margin-top: 4rem;
 
-    h3 {
+    h4 {
         margin: 10px 0;
         line-height: 30px;
         animation: slideRight 1s ease-in-out 1 forwards;

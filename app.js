@@ -119,7 +119,7 @@ submitBtn.onclick = function (e) {
         thankYou.classList.remove("hide");
 
         document.querySelector(
-            ".thank-you h3",
+            ".thank-you h4",
         ).innerHTML = `Thank You ${nameField.value} for registering with us.`;
 
         document.querySelector(

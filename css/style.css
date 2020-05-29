@@ -28,6 +28,7 @@ body {
   max-width: 100%;
   min-height: 100vh;
   height: 100%;
+  display: block;
   -webkit-filter: blur(3px);
           filter: blur(3px);
 }
@@ -192,7 +193,8 @@ body {
 
 .form .button.disabled {
   cursor: not-allowed;
-  background: #ccc;
+  background: #504a4a;
+  border-color: transparent;
 }
 
 .form .button.hide {
@@ -223,7 +225,7 @@ body {
   margin-top: 4rem;
 }
 
-.thank-you h3 {
+.thank-you h4 {
   margin: 10px 0;
   line-height: 30px;
   -webkit-animation: slideRight 1s ease-in-out 1 forwards;
